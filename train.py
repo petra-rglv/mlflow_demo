@@ -1,8 +1,13 @@
-import numpy as np
-from sklearn.linear_model import LogisticRegression
+import pandas as pd
+import os
 
 import mlflow
-import mlflow.sklearn
+from mlflow import log_metric, log_param, log_artifacts
+from mlflow.sklearn import log_model
+
+from sklearn import metrics
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
 
 if __name__ == "__main__":
     # Load the Data
