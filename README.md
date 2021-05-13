@@ -1,4 +1,3 @@
-# Materials for the "Model Deployment with Containers" demo
 
 ## One tool to track, serve and containerize your model
 
